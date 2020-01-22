@@ -457,7 +457,7 @@ def main():
     loss.grad[None] = 1
     backward()
     per_iter_time = time.time() - t
-    print('i=', iter, 'loss=', l, F' per iter {per_iter_time:.2f}s')
+    print('i=', iter, 'loss=', l, ' per iter {per_iter_time:.2f}s')
     learning_rate = 30
 
     for i in range(n_actuators):
